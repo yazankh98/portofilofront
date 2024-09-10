@@ -68,7 +68,7 @@ const Home = () => {
 
             <div className="Hero">
                 <div className='HeroTitle' >
-                    <h1>Hi , <br /> <span>I'm Yazan</span></h1> <br />
+                    <h1>Hello , <br /> <span>I'm Yazan</span></h1> <br />
                     <h1>Full Stack Developer | Crafting Innovative Solutions for Seamless User Experiences</h1>
                 </div>
                 <img className='Pic' src="/images/yazan.png" alt="" />
