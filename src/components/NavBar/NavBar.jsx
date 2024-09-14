@@ -1,35 +1,10 @@
-import React, { useEffect, useState, useContext } from 'react'
+import React, { useState, useContext } from 'react'
 import './NavBar.css'
-import axios from 'axios'
-import { Link } from 'react-router-dom'
-import LogOut from '../LogOut/LogOut'
-
-import { ThemeContext } from './../../../App'
-import { URLContext } from './../../../context/URLContext'
-
-
+import { ThemeContext } from '../../context/ThemeContext'
 const NavBar = () => {
-    const [isAdmin, setisAdmin] = useState();
     const [showMenu, setshowMenu] = useState(true)
     const [theme, setTheme] = useContext(ThemeContext)
-    const url = useContext(URLContext)
 
-    const token = localStorage.getItem('token');
-    useEffect(() => {
-        axios.get(
-            `${url}/api/isadmin`,
-
-            {
-                headers: {
-                    Authorization: `Bearer ${token}`
-                }
-            }
-        ).then((response) => {
-            (setisAdmin(response.data)
-
-            )
-        }).catch(erroe => console.log(erroe))
-    }, []);
     return (
         <div>
             <nav style={{ backgroundColor: (theme === 'dark') ? 'rgb(39 97 98)' : 'rgb(192 228 229)' }} className="navbar nav navbar-expand-lg ">
@@ -59,15 +34,6 @@ const NavBar = () => {
                             </li>
                         </ul>
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li >
-                                <Link className="btn btn-secondary btnBack" to="/login"> Are You Admin? </Link>
-                            </li>
-                            <li>
-                                {isAdmin && <Link className="btn btn-info btnBack" to="/createinfo"> Create Info  </Link>}
-                            </li>
-                            <li>
-                                {isAdmin && <LogOut />}
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -83,8 +49,6 @@ const NavBar = () => {
                     }
                 </div>
             </nav>
-
-
 
             {/* navbar for mobile screen */}
             <nav style={{ backgroundColor: (theme === 'dark') ? 'rgb(39 97 98)' : 'rgb(192 228 229)' }} className='navMobile' >
@@ -115,17 +79,6 @@ const NavBar = () => {
                             <a className='btn btn-secondary btnBack wer' href="#Projects">Projects</a>
                         </li>
 
-                    </ul>
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li>
-                            <Link className="btn btn-secondary btnBack" to="/login"> Are You Admin? </Link>
-                        </li>
-                        <li className='createinfo' >
-                            {isAdmin && <Link className="btn btn-info btnBack" to="/createinfo"> Create Info  </Link>}
-                        </li>
-                        <li>
-                            {isAdmin && <LogOut />}
-                        </li>
                     </ul>
                     <div className="navMobileLine"></div> <br />
 

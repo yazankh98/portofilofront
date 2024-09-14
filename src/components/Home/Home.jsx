@@ -1,67 +1,14 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React from 'react'
 import './Home.css'
-import axios from 'axios'
 import Footer from '../Footer/Footer'
-import Contact from '../Contact/Contact'
 import NavBar from '../NavBar/NavBar'
-import { URLContext } from '../../../context/URLContext'
+import Education from './../../data/Education.json'
+import Certificate from './../../data/Certificate.json'
+import Experience from './../../data/Experience.json'
+import Skill from './../../data/Skill.json'
+import Project from './../../data/Project.json'
+import Contact from './../../data/Contact.json'
 const Home = () => {
-    const url = useContext(URLContext)
-    const [infoCertificate, setinfoCertificate] = useState("")
-    const [infoEducation, setinfoEducation] = useState("")
-    const [infoExperience, setinfoExperience] = useState("")
-    const [infoSkill, setinfoSkill] = useState("")
-    const [infoProject, setinfoProject] = useState("")
-
-
-    useEffect(() => {
-        axios.get(
-            `${url}/api/educations`,
-            {
-            }
-        ).then((response) => {
-            (setinfoEducation(response.data[1])
-            )
-        }).catch(erroe => console.log(erroe))
-    }, [])
-    useEffect(() => {
-        axios.get(
-            `${url}/api/certificates`,
-            {
-            }
-        ).then((response) => {
-            (setinfoCertificate(response.data[1]))
-        }).catch(erroe => console.log(erroe))
-
-    }, [])
-    useEffect(() => {
-        axios.get(
-            `${url}/api/skills`,
-            {
-            }
-        ).then((response) => {
-            (setinfoSkill(response.data[1])
-            )
-        }).catch(erroe => console.log(erroe))
-    }, [])
-    useEffect(() => {
-        axios.get(
-            `${url}/api/experiences`,
-            {
-            }
-        ).then((response) => {
-            (setinfoExperience(response.data[1])
-            )
-        }).catch(erroe => console.log(erroe))
-    }, [])
-    useEffect(() => {
-        axios.get(
-            `${url}/api/projects`, {})
-            .then((response) => {
-                (setinfoProject(response.data[1]))
-            }).catch(erroe => console.log(erroe))
-    }, [])
-
     return (
         <div className='home' >
             <NavBar />
@@ -83,7 +30,7 @@ const Home = () => {
             </section>
             <section className='Education' id='Education' >
                 <h2 className='titleEducation' >Education</h2>
-                {infoEducation && infoEducation.map((element, index) => {
+                {Education.map((element, index) => {
                     return (
                         <div key={index} >
                             <b>{element.duration}</b>
@@ -95,7 +42,7 @@ const Home = () => {
             </section>
             <section className='Certificate' id='Certificate' >
                 <h2 className='titleCertificate' > Certificate</h2>
-                {infoCertificate && infoCertificate.map((element, index) => {
+                {Certificate.map((element, index) => {
                     return (
                         <div key={index}>
                             <p  >
@@ -110,7 +57,7 @@ const Home = () => {
             </section>
             <section className='Experience' id='Experiences' >
                 <h2 className='titleExperiences' >Experiences</h2>
-                {infoExperience && infoExperience.map((element, index) => {
+                {Experience.map((element, index) => {
                     return (
                         <div key={index}>
                             <p  >
@@ -126,7 +73,7 @@ const Home = () => {
             <section className='Skill' id='Skill'  >
                 <h2 className='titleSkil' >Skills</h2>
                 <div className='SkillContainer' >
-                    {infoSkill && infoSkill.map((element, index) => {
+                    {Skill.map((element, index) => {
                         return (
                             <b className='SkillName' key={index} >{element.name}</b>
                         )
@@ -136,11 +83,11 @@ const Home = () => {
             <h2 className='titleProject' >Projects</h2>
             <section className='Project' id='Projects' >
 
-                {infoProject && infoProject.map((element, index) => {
+                {Project.map((element, index) => {
                     return (
                         <div key={index} >
                             <div className="card ProjectContainer ">
-                                <img src={`${url}/images/${element.image}`} className="card-img-top" alt="..." />
+                                <img src={`/images/${element.image}`} className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{element.name}</h5>
                                     <p className="card-text">{element.about}</p>
@@ -152,7 +99,19 @@ const Home = () => {
                 })}
             </section>
             <section className='Social' id='Contact' >
-                <Contact />
+                <h2 className='titleSocial' >Contact</h2>
+                <div className="contactContainer">
+
+                    {Contact.map((element, index) => {
+                        return (
+                            <div key={index} >
+                                <a target="_blank" href={element.url}>
+                                    <img src={`/images/${element.image}`} alt="" />
+                                </a>
+                            </div>
+                        )
+                    })}
+                </div>
             </section>
             <Footer />
         </div>

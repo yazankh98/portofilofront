@@ -1,0 +1,21 @@
+[
+    {
+        "url" :"https://github.com/yazankh98",
+        "image":"GitHub.png"
+    }
+    ,
+    {
+        "url" :"https://www.linkedin.com/in/yazan-khairi-al-anam-2689481a3",
+        "image":"linkd.png"
+    }
+    ,
+    {
+        "url" :"mailto:yazan.kh.anam@gmail.com",
+        "image":"gmail.png"
+    },
+    {
+        "url":"https://wa.me/+963988090112?text=Hello",
+        "image":"whatsupp.png"
+    }
+    
+]

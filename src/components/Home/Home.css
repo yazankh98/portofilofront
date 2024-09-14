@@ -98,6 +98,13 @@ p {
     width: 25rem;
 }
 
+.contactContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
 @media screen and (max-width:992px) {
     .Pic {
         width: 50%;
@@ -106,9 +113,9 @@ p {
     .ProjectContainer {
         width: 18rem;
     }
-    .Hero
-    {
+
+    .Hero {
         flex-direction: column-reverse;
-    align-items: center;
+        align-items: center;
     }
 }
