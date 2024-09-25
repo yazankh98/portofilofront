@@ -81,13 +81,17 @@ p {
 .Project {
     flex-wrap: wrap;
     display: flex;
-    /* width: 100%; */
 }
 
 .ProjectContainer a {
     background-color: cadetblue;
     margin: 20px 0;
     width: 100%;
+}
+
+.ProjectContainer img {
+    height: 28vh;
+    object-fit: contain;
 }
 
 .ProjectContainer {
