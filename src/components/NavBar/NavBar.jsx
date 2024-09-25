@@ -38,7 +38,7 @@ const NavBar = () => {
                         </ul>
                     </div>
                     <div>
-                    <DownloadCv/>
+                        <DownloadCv />
                     </div>
                 </div>
                 <div onClick={() => {
@@ -85,7 +85,9 @@ const NavBar = () => {
 
                     </ul>
                     <div className="navMobileLine"></div> <br />
-
+                    <div>
+                        <DownloadCv />
+                    </div>
                     <div className="togle" >
                         <p style={{ color: 'black' }}  >Dark Mood</p>
                         <label className="ui-switch"  >
