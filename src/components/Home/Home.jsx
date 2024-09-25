@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 import Footer from '../Footer/Footer'
 import NavBar from '../NavBar/NavBar'
+
 import Education from './../../data/Education.json'
 import Certificate from './../../data/Certificate.json'
 import Experience from './../../data/Experience.json'
@@ -114,6 +115,7 @@ const Home = () => {
                 </div>
             </section>
             <Footer />
+            
         </div>
     )
 }

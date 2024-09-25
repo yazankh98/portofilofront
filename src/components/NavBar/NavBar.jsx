@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react'
 import './NavBar.css'
+import DownloadCv from './../DownloadCv/DownloadCv'
 import { ThemeContext } from '../../context/ThemeContext'
 const NavBar = () => {
     const [showMenu, setshowMenu] = useState(true)
@@ -35,6 +36,9 @@ const NavBar = () => {
                         </ul>
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         </ul>
+                    </div>
+                    <div>
+                    <DownloadCv/>
                     </div>
                 </div>
                 <div onClick={() => {
