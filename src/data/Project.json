@@ -28,5 +28,11 @@
         "name": "portofilo",
         "about": "Full Stack With Dashboard For Admin To Update Or Delete Info(Laravel+React)",
         "url": "https://github.com/yazankh98/portofilofront"
+    },
+    {
+        "image": "6.png",
+        "name": "Generate QR Code",
+        "about": "Front-End Simple Create QR Code For Any URL And WhatsApp",
+        "url": "https://yazankh98.github.io/Generate_QR_Code/index.html"
     }
 ]
