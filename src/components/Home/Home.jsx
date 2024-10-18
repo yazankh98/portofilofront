@@ -24,7 +24,7 @@ const Home = () => {
 
             <section className='About' id='About' >
                 <p className='AboutTitle' >
-                    Hello! I'm Yazan Khairi Al-anam, a recent graduate eager to kickstart my journey as a full stack developer. Armed with a informatic engineering From Ittihad Private University, I have a strong foundation in both front-end and back-end development. I've gained proficiency in HTML, CSS, JavaScript, Library Like React , frameworks like , Bootstrap. And Know Well GIT/github. alongside backend technologies such as PHP And MySQL .
+                    Hello! I'm Yazan Khairi Al-anam, a recent graduate eager to kickstart my journey as a full stack developer. Armed with a informatic engineering From Ittihad Private University, I have a strong foundation in both front-end and back-end development. I've gained proficiency in HTML, CSS, JavaScript, Library Like React  And Know Well Bootstrap And GIT/github. alongside backend technologies such as PHP And MySQL .
                     I delved into projects using Laravel to develop scalable web applications, honing my skills in database management, API integrations, and server-side logic. I am passionate about creating user-friendly interfaces and leveraging backend technologies to deliver robust solutions. I know how to design using Photoshop and Illustrator. I'm excited about the prospect of contributing my skills and learning from
                     experienced professionals in the field. Let's connect to explore how my dedication and skills can benefit your team..!!
                 </p>
