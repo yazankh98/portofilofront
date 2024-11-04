@@ -3,7 +3,7 @@ import './DownloadCv.css'
 const downloadCv = () => {
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = '/yazancv.pdf'; // Path to your PDF in the public folder
+        link.href = '/yazanCv(ATS).pdf'; // Path to your PDF in the public folder
         link.download = 'yazan cv.pdf'; // Name for the downloaded file
         link.click();
     }
