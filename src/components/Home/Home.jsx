@@ -18,6 +18,7 @@ const Home = () => {
                 <div className='HeroTitle' >
                     <h1>Hello , <br /> <span>I'm Yazan</span></h1> <br />
                     <h1>Full Stack Developer | Crafting Innovative Solutions for Seamless User Experiences</h1>
+                    <h4>Dubai residence visa</h4>
                 </div>
                 <img className='Pic' src="/images/yazan.png" alt="" />
             </div>
@@ -115,7 +116,7 @@ const Home = () => {
                 </div>
             </section>
             <Footer />
-            
+
         </div>
     )
 }
