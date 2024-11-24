@@ -32,7 +32,7 @@
     {
         "image": "6.png",
         "name": "Generate QR Code",
-        "about": "Front-End Simple Create QR Code For Any URL And WhatsApp",
+        "about": "Front-End Application to Generate QR Codes for any URL or WhatsApp number",
         "url": "https://yazankh98.github.io/Generate_QR_Code/index.html"
     }
 ]
