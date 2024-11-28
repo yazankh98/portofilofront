@@ -16,7 +16,7 @@ const Home = () => {
             <div className="Hero">
                 <div className='HeroTitle' >
                     <h1>Hello , <br /> <span>I'm Yazan</span></h1> <br />
-                    <h1>Full Stack Developer | Crafting Innovative Solutions for Seamless User Experiences</h1>
+                    <h1>Full-Stack Developer | React.js & Laravel Specialist | Crafting Scalable Solutions</h1>
                     <h4>Dubai residence visa</h4>
                 </div>
                 <img className='Pic' src="/images/yazan.png" alt="" />
@@ -24,9 +24,11 @@ const Home = () => {
 
             <section className='About' id='About' >
                 <p className='AboutTitle' >
-                    Hello! I'm Yazan Khairi Al-anam, a recent graduate eager to kickstart my journey as a full stack developer. Armed with a informatic engineering From Ittihad Private University, I have a strong foundation in both front-end and back-end development. I've gained proficiency in HTML, CSS, JavaScript, Library Like React  And Know Well Bootstrap And GIT/github. alongside backend technologies such as PHP And MySQL .
-                    I delved into projects using Laravel to develop scalable web applications, honing my skills in database management, API integrations, and server-side logic. I am passionate about creating user-friendly interfaces and leveraging backend technologies to deliver robust solutions. I know how to design using Photoshop and Illustrator. I'm excited about the prospect of contributing my skills and learning from
-                    experienced professionals in the field. Let's connect to explore how my dedication and skills can benefit your team..!!
+                    I'm Yazan Khairi Al-Anam, a recent Informatics Engineering graduate from Ittihad Private University, eager to begin my career as a full-stack developer. I have a strong foundation in front-end and back-end development, with proficiency in HTML, CSS, JavaScript, React, Bootstrap, and version control tools like Git/GitHub.
+
+                    On the backend, I specialize in PHP and MySQL, with hands-on experience developing scalable web applications using Laravel, including database management, API integration, and server-side logic. I'm also skilled in design tools like Photoshop and Illustrator, enabling me to craft user-friendly interfaces that blend functionality with aesthetics.
+
+                    I'm passionate about building efficient, robust solutions and excited to contribute my skills while learning from industry professionals. Let's connect to explore how I can add value to your team!
                 </p>
             </section>
             <section className='Education' id='Education' >
