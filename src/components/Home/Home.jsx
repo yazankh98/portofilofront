@@ -6,6 +6,7 @@ import Education from './../../data/Education.json'
 import Certificate from './../../data/Certificate.json'
 import Experience from './../../data/Experience.json'
 import Skill from './../../data/Skill.json'
+import softskils from './../../data/softskils.json'
 import Project from './../../data/Project.json'
 import Contact from './../../data/Contact.json'
 const Home = () => {
@@ -17,7 +18,7 @@ const Home = () => {
                 <div className='HeroTitle' >
                     <h1>Hello , <br /> <span>I'm Yazan</span></h1> <br />
                     <h1>Full-Stack Developer | React.js & Laravel Specialist | Crafting Scalable Solutions</h1>
-                    <h4>Dubai residence visa</h4>
+                    {/* <h4>Dubai residence visa</h4> */}
                 </div>
                 <img className='Pic' src="/images/yazan.png" alt="" />
             </div>
@@ -74,9 +75,19 @@ const Home = () => {
                 })}
             </section>
             <section className='Skill' id='Skill'  >
-                <h2 className='titleSkil' >Skills</h2>
+                <h2 className='titleSkil' >Technical Skills</h2>
                 <div className='SkillContainer' >
                     {Skill.map((element, index) => {
+                        return (
+                            <b className='SkillName' key={index} >{element.name}</b>
+                        )
+                    })}
+                </div>
+            </section>
+            <section className='Skill' id='Skill'  >
+                <h2 className='titleSkil' > Soft Skills</h2>
+                <div className='SkillContainer' >
+                    {softskils.map((element, index) => {
                         return (
                             <b className='SkillName' key={index} >{element.name}</b>
                         )
