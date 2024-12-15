@@ -60,10 +60,21 @@ const NavBar = () => {
                     <div className="logoMobile">
                         <a className="navbar-brand" href="#">Yazan's Portofilo</a>
                     </div>
+                    <div className="togle" >
+                        <label className="ui-switch"  >
+                            <input type="checkbox" />
+                            <div className="slider" onClick={() => {
+                                setTheme(theme === 'dark' ? 'light' : 'dark')
+                            }}>
+                                <div className="circle"></div>
+                            </div>
+                        </label>
+                    </div>
                     <div className="menuMobile">
                         <img onClick={() => { setshowMenu(!showMenu) }} src="/images/Menu.png" alt="" />
                     </div>
                 </div>
+
                 <div style={{ display: (showMenu) ? "none" : "block" }} className="pagesMobile">
                     <img onClick={() => { setshowMenu(!showMenu) }} className='pageMobileExit' src="/images/exit.png" alt="" />
                     <ul>
@@ -87,17 +98,6 @@ const NavBar = () => {
                     <div className="navMobileLine"></div> <br />
                     <div>
                         <DownloadCv />
-                    </div>
-                    <div className="togle" >
-                        <p style={{ color: 'black' }}  >Dark Mood</p>
-                        <label className="ui-switch"  >
-                            <input type="checkbox" />
-                            <div className="slider" onClick={() => {
-                                setTheme(theme === 'dark' ? 'light' : 'dark')
-                            }}>
-                                <div className="circle"></div>
-                            </div>
-                        </label>
                     </div>
                     <br />
 

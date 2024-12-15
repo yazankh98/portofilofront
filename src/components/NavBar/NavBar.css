@@ -56,10 +56,9 @@
     .togle {
         display: flex;
         justify-content: space-between;
-        width: 66vw;
         align-items: center;
         margin: 0 auto;
-        padding: 5px;
+        
     }
 
     .ui-switch {
