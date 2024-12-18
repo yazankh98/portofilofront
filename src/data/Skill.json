@@ -6,7 +6,10 @@
         "name": "CSS"
     },
     {
-        "name": "Javascript"
+        "name": "JavaScript"
+    },
+    {
+        "name": "typeScript"
     },
     {
         "name": "React - Vite"

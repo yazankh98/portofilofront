@@ -25,11 +25,14 @@ const Home = () => {
 
             <section className='About' id='About' >
                 <p className='AboutTitle' >
-                    I'm Yazan Khairi Al-Anam, a recent Informatics Engineering graduate from Ittihad Private University, eager to begin my career as a full-stack developer. I have a strong foundation in front-end and back-end development, with proficiency in HTML, CSS, JavaScript, React, Bootstrap, and version control tools like Git/GitHub.
 
-                    On the backend, I specialize in PHP and MySQL, with hands-on experience developing scalable web applications using Laravel, including database management, API integration, and server-side logic. I'm also skilled in design tools like Photoshop and Illustrator, enabling me to craft user-friendly interfaces that blend functionality with aesthetics.
+                    I'm Yazan Khairi Al-Anam, an Informatics Engineer with a solid foundation in front-end and back-end development. I am proficient in HTML, CSS, JavaScript, React, Bootstrap, and version control tools like Git and GitHub.
 
-                    I'm passionate about building efficient, robust solutions and excited to contribute my skills while learning from industry professionals. Let's connect to explore how I can add value to your team!
+                    On the back end, I specialize in PHP and MySQL, with hands-on experience developing scalable web applications using Laravel. My expertise includes database management, API integration, and server-side logic. Additionally, I am skilled in design tools such as Photoshop and Illustrator, allowing me to create user-friendly interfaces that seamlessly combine functionality and aesthetics.
+
+                    I am passionate about simplifying complexity and delivering efficient, robust solutions. My goal is to craft projects that exceed expectations and help businesses achieve new heights. With a hands-on approach and extensive experience, I ensure every detail is carefully tailored to meet your needs.
+
+                    Choose me as your development partner, and let's connect to explore how I can add value to your business!
                 </p>
             </section>
             <section className='Education' id='Education' >
