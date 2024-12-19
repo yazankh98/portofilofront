@@ -10,7 +10,7 @@ import { ThemeContext } from "./context/ThemeContext";
 function getInitialTheme() {
 
   const theme = localStorage.getItem('theme')
-  return theme ? JSON.parse(theme) : 'dark'
+  return theme ? JSON.parse(theme) : 'light'
 }
 function App() {
   const [theme, setTheme] = useState(getInitialTheme)
