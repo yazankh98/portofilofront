@@ -17,7 +17,7 @@ const Home = () => {
             <div className="Hero">
                 <div className='HeroTitle' >
                     <h1>Hello , <br /> <span>I'm Yazan</span></h1> <br />
-                    <h1>Full-Stack Developer | React.js & Laravel Specialist | Crafting Scalable Solutions</h1>
+                    <h1>Full-Stack Developer | React.js & Laravel & Specialist | Crafting Scalable Solutions</h1>
                     {/* <h4>Dubai residence visa</h4> */}
                 </div>
                 <img className='Pic' src="/images/yazan.png" alt="" />
@@ -117,18 +117,21 @@ const Home = () => {
             </section>
             <section className='Social' id='Contact' >
                 <h2 className='titleSocial' >Contact</h2>
-                <div className="contactContainer">
+                <marquee direction="left" scrollamount="10">
+                    <div className="contactContainer">
 
-                    {Contact.map((element, index) => {
-                        return (
-                            <div key={index} >
-                                <a target="_blank" href={element.url}>
-                                    <img src={`/images/${element.image}`} alt="" />
-                                </a>
-                            </div>
-                        )
-                    })}
-                </div>
+                        {Contact.map((element, index) => {
+                            return (
+                                <div key={index} >
+                                    <a target="_blank" href={element.url}>
+                                        <img src={`/images/${element.image}`} alt="" />
+                                    </a>
+                                </div>
+                            )
+                        })}
+
+                    </div>
+                </marquee>
             </section>
             <Footer />
 
