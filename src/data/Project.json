@@ -34,5 +34,11 @@
         "name": "Generate QR Code",
         "about": "Front-End Application to Generate QR Codes for any URL or WhatsApp number",
         "url": "https://yazankh98.github.io/Generate_QR_Code/index.html"
+    },
+    {
+        "image": "7.png",
+        "name": "Travel reservations",
+        "about": "Front-End Website For Travel And Booking With API",
+        "url": "https://flights-blond.vercel.app/"
     }
 ]
