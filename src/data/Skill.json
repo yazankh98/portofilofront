@@ -18,6 +18,12 @@
         "name": "Bootstrap"
     },
     {
+        "name": "MangoDb"
+    },
+    {
+        "name": "prisma"
+    },
+    {
         "name": "Tailwind"
     },
     {
@@ -28,6 +34,9 @@
     },
     {
         "name": "MySQL"
+    },
+    {
+        "name": "PostgreSQL"
     },
     {
         "name": "Git & Githup"

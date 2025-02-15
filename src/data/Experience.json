@@ -1,27 +1,32 @@
 [
     {
-        "name": "Full Stack Developer",
-        "company": "MCS Services – Sharjah, UAE ",
-        "duration": "(SEPTEMBER 2024 – JANUARY 2025)"
+        "name": "Full Stack Developer (NextJs) ",
+        "company": "training – Vica Web Solutions , Syria   ",
+        "duration": "SEPTEMBER 2024 – JANUARY 2025 – (5 MONTHS)  "
     },
     {
-        "name": "Front-end Developer",
-        "company": "Al afaq - Damascus ",
-        "duration": "(JUNE 2023 – SEPTEMBER 2024)"
+        "name": "Back-end Developer (Laravel)",
+        "company": " training – Vica Web Solutions , Syria ",
+        "duration": "MARCH 2024 – JULY 2024 – (5 MONTHS) "
+    },
+    {
+        "name": "Front-end Developer (reactJs) ",
+        "company": " training – Vica Web Solutions , Syria ",
+        "duration": "FEBRUARY 2024 – JULY 2024 – (6 MONTHS)  "
     },
     {
         "name": "Technical Support And Social Media ",
         "company": "Lapronteh Leather Products - Damascus",
-        "duration": "(JANUARY 2021 - MAY 2023)"
+        "duration": "MARCH 2021 - JANUARY 2023 – (1 YEARS AND 11 MONTHS) "
     },
     {
         "name": "Graphic Designer",
         "company": "Freelance",
-        "duration": "(APRIL 2020 - FEBRUARY 2023)"
+        "duration": "APRIL 2020 - FEBRUARY 2021 – (11 MONTHS) "
     },
     {
         "name": "Graphic Designer",
         "company": "PrimoCore - Damascus",
-        "duration": "(JANUARY 2020 - APRIL 2020 )"
+        "duration": "JANUARY 2020 - APRIL 2020 – (4 MONTHS) "
     }
 ]

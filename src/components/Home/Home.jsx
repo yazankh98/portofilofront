@@ -25,14 +25,16 @@ const Home = () => {
 
             <section className='About' id='About' >
                 <p className='AboutTitle' >
-
-                    I'm Yazan Khairi Al-Anam, an Informatics Engineer with a solid foundation in front-end and back-end development. I am proficient in HTML, CSS, JavaScript, React, Bootstrap, and version control tools like Git and GitHub.
-
-                    On the back end, I specialize in PHP and MySQL, with hands-on experience developing scalable web applications using Laravel. My expertise includes database management, API integration, and server-side logic. Additionally, I am skilled in design tools such as Photoshop and Illustrator, allowing me to create user-friendly interfaces that seamlessly combine functionality and aesthetics.
-
-                    I am passionate about simplifying complexity and delivering efficient, robust solutions. My goal is to craft projects that exceed expectations and help businesses achieve new heights. With a hands-on approach and extensive experience, I ensure every detail is carefully tailored to meet your needs.
-
-                    Choose me as your development partner, and let's connect to explore how I can add value to your business!
+                    I am a dedicated full-stack developer with a degree in Informatics Engineering from
+                    Ittihad Private University. I have a strong foundation in both front-end and back
+                    end development, with proficiency in HTML, CSS, JavaScript, and libraries like
+                    React and Next.js. I am well-versed in tools such as Bootstrap and Git/GitHub.
+                    On the backend, I specialize in PHP and MySQL, with experience developing
+                    scalable web applications using Laravel. I also have expertise in modern
+                    technologies like MongoDB, PostgreSQL, and Prisma for efficient database
+                    management. My skills include API integrations, server-side logic, and building
+                    high-performance applications. Additionally, I have a strong background in graphic
+                    design, proficient in Photoshop and Illustrator.
                 </p>
             </section>
             <section className='Education' id='Education' >
