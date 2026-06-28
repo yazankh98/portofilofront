@@ -65,7 +65,7 @@ const Home = () => {
           </div>
 
           <div className="heroVisual">
-            <img className="Pic" src="/public/images/yazan.jpg" alt="Yazan Khairi" />
+            <img className="Pic" src="/images/yazan.jpg" alt="Yazan Khairi" />
 
             <div className="codeCard">
               <div className="codeDots">
