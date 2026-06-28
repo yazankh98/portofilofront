@@ -77,7 +77,7 @@ const Home = () => {
                 <span>const</span> developer = &#123;
               </p>
               <p>&nbsp;&nbsp;name: "Yazan",</p>
-              <p>&nbsp;&nbsp;stack: ["React", "Laravel , NextJs"],</p>
+              <p>&nbsp;&nbsp;stack: ["React", "Next.js", "Laravel"],</p>
               <p>&nbsp;&nbsp;focus: "Scalable Apps"</p>
               <p>&#125;</p>
             </div>
