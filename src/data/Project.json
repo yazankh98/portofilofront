@@ -2,61 +2,61 @@
     {
         "image": "1.png",
         "name": "B-World",
-        "about": "React-Vite (API)",
+        "about": "React + Vite application connected to an API, focused on dynamic content and smooth user experience.",
         "url": "https://project-7-react.vercel.app/"
     },
     {
         "image": "2.png",
         "name": "Organick",
-        "about": "Front-End",
+        "about": "Responsive front-end website with a clean organic products layout and polished visual sections.",
         "url": "https://yazankh98.github.io/project-2/"
     },
     {
         "image": "3.png",
         "name": "Travel",
-        "about": "React-Vite",
+        "about": "React + Vite travel website with modern landing sections, reusable components, and responsive design.",
         "url": "https://project5-react-theta.vercel.app/"
     },
     {
         "image": "4.png",
-        "name": "Blog",
-        "about": "Back-End Laravel Blade And Dashboard for Admin",
+        "name": "Blog Dashboard",
+        "about": "Laravel Blade back-end project with an admin dashboard for managing blog content.",
         "url": "https://github.com/yazankh98/blog"
     },
     {
         "image": "5.png",
-        "name": "portofilo",
-        "about": "Full Stack With Dashboard For Admin To Update Or Delete Info(Laravel+React)",
+        "name": "Portfolio Dashboard",
+        "about": "Full-stack portfolio system built with Laravel and React, including an admin dashboard to update content.",
         "url": "https://github.com/yazankh98/portofilofront"
     },
     {
         "image": "6.png",
-        "name": "Generate QR Code",
-        "about": "Front-End Application to Generate QR Codes for any URL or WhatsApp number",
+        "name": "QR Code Generator",
+        "about": "Front-end application for generating QR codes from URLs, WhatsApp numbers, and custom text.",
         "url": "https://yazankh98.github.io/Generate_QR_Code/index.html"
     },
     {
         "image": "7.png",
-        "name": "Travel reservations",
-        "about": "Front-End Website For Travel And Booking With API",
+        "name": "Travel Reservations",
+        "about": "Travel booking interface integrated with API data for searching and displaying reservation options.",
         "url": "https://flights-blond.vercel.app/"
     },
     {
         "image": "8.png",
-        "name": "Travel agency",
-        "about": "Front-End Website For Travel ",
+        "name": "Travel Agency",
+        "about": "Responsive front-end website for a travel agency with promotional sections and destination layouts.",
         "url": "https://travel-agency-nu-topaz.vercel.app/"
     },
     {
         "image": "9.png",
-        "name": "medical",
-        "about": "Front-End Website For Tmedical",
+        "name": "Medical Center",
+        "about": "Responsive medical center website with service sections, modern layout, and clear user navigation.",
         "url": "https://medical-center-azure.vercel.app/"
     },
     {
         "image": "10.png",
         "name": "Online Store",
-        "about": "Front-End Website For Market",
+        "about": "Responsive e-commerce front-end interface for browsing products and presenting market content.",
         "url": "https://online-store-phi-two.vercel.app/"
     }
 ]

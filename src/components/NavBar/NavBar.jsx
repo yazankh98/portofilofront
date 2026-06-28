@@ -2,108 +2,113 @@ import React, { useState, useContext } from 'react'
 import './NavBar.css'
 import DownloadCv from './../DownloadCv/DownloadCv'
 import { ThemeContext } from '../../context/ThemeContext'
+
+const navLinks = [
+    { label: 'Education', href: '#Education' },
+    { label: 'Certificates', href: '#Certificate' },
+    { label: 'Experience', href: '#Experiences' },
+    { label: 'Skills', href: '#Skill' },
+    { label: 'Projects', href: '#Projects' },
+    { label: 'Contact', href: '#Contact' },
+]
+
 const NavBar = () => {
-    const [showMenu, setshowMenu] = useState(true)
+    const [showMenu, setShowMenu] = useState(false)
     const [theme, setTheme] = useContext(ThemeContext)
 
+    const toggleTheme = () => {
+        setTheme(theme === 'dark' ? 'light' : 'dark')
+    }
+
     return (
-        <div>
-            <nav style={{ backgroundColor: (theme === 'dark') ? 'rgb(39 97 98)' : 'rgb(192 228 229)' }} className="navbar nav navbar-expand-lg ">
-                <div className="container-fluid">
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <h4 className='webName' style={{ color: (theme === 'light') ? 'black' : 'white' }} >Yazan's Portofilo</h4>
-                        </ul>
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li>
-                                <a className='btn btn-secondary btnBack wer' href="#Education">Education</a>
-                            </li>
-                            <li>
-                                <a className='btn btn-secondary  btnBack wer' href="#Certificate">Certificate</a>
-                            </li>
-                            <li>
-                                <a className='btn btn-secondary btnBack wer' href="#Experiences">Experiences</a>
-                            </li>
-                            <li >
-                                <a className='btn btn-secondary  btnBack wer' href="#Skill">Skill</a>
-                            </li>
-                            <li>
-                                <a className='btn btn-secondary btnBack wer' href="#Projects">Projects</a>
-                            </li>
-                            <li>
-                                <a className='btn btn-secondary btnBack wer' href="#Contact">Contact</a>
-                            </li>
-                        </ul>
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        </ul>
-                    </div>
-                    <div>
-                        <DownloadCv />
-                    </div>
+        <header className={`portfolioNav ${theme === 'dark' ? 'dark' : 'light'}`}>
+            <nav className="navContainer">
+                <a className="brand" href="#">
+                    <span className="brandMark">YK</span>
+                    <span>
+                        <strong>Yazan Khairi</strong>
+                        <small>Full-Stack Developer</small>
+                    </span>
+                </a>
+
+                <div className="desktopLinks">
+                    {navLinks.map((link) => (
+                        <a key={link.href} className="navLink" href={link.href}>
+                            {link.label}
+                        </a>
+                    ))}
                 </div>
-                <div onClick={() => {
-                    {
-                        setTheme(theme === 'dark' ? 'light' : 'dark')
-                    }
-                }} className="darkMood">
-                    {theme === 'dark' ?
-                        <img src="/images/DarkMood.png" alt="" />
-                        :
-                        <img src="/images/LightMood.png" alt="" />
-                    }
+
+                <div className="navActions">
+                    <DownloadCv />
+
+                    <button
+                        className="themeButton"
+                        type="button"
+                        onClick={toggleTheme}
+                        aria-label="Toggle theme"
+                    >
+                        {theme === 'dark' ? 'Light' : 'Dark'}
+                    </button>
+
+                    <button
+                        className="menuButton"
+                        type="button"
+                        onClick={() => setShowMenu(true)}
+                        aria-label="Open menu"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </nav>
 
-            {/* navbar for mobile screen */}
-            <nav style={{ backgroundColor: (theme === 'dark') ? 'rgb(39 97 98)' : 'rgb(192 228 229)' }} className='navMobile' >
-                <div className="navMobilecontainer">
-                    <div className="logoMobile">
-                        <a className="navbar-brand" href="#">Yazan's Portofilo</a>
-                    </div>
-                    <div className="togle" >
-                        <label className="ui-switch"  >
-                            <input type="checkbox" />
-                            <div className="slider" onClick={() => {
-                                setTheme(theme === 'dark' ? 'light' : 'dark')
-                            }}>
-                                <div className="circle"></div>
-                            </div>
-                        </label>
-                    </div>
-                    <div className="menuMobile">
-                        <img onClick={() => { setshowMenu(!showMenu) }} src="/images/Menu.png" alt="" />
-                    </div>
-                </div>
+            {showMenu && (
+                <div className="mobileMenu">
+                    <div className="mobileMenuHeader">
+                        <div>
+                            <strong>Yazan Khairi</strong>
+                            <small>Full-Stack Developer</small>
+                        </div>
 
-                <div style={{ display: (showMenu) ? "none" : "block" }} className="pagesMobile">
-                    <img onClick={() => { setshowMenu(!showMenu) }} className='pageMobileExit' src="/images/exit.png" alt="" />
-                    <ul>
-                        <li>
-                            <a className='btn btn-secondary btnBack wer' href="#Education">Education</a>
-                        </li>
-                        <li className='Certificate' >
-                            <a className='btn btn-secondary btnBack wer' href="#Certificate">Certificate</a>
-                        </li>
-                        <li>
-                            <a className='btn btn-secondary btnBack wer' href="#Experiences">Experiences</a>
-                        </li>
-                        <li className='Skill'>
-                            <a className='btn btn-secondary btnBack wer' href="#Skill">Skill</a>
-                        </li>
-                        <li>
-                            <a className='btn btn-secondary btnBack wer' href="#Projects">Projects</a>
-                        </li>
+                        <button
+                            className="closeButton"
+                            type="button"
+                            onClick={() => setShowMenu(false)}
+                            aria-label="Close menu"
+                        >
+                            X
+                        </button>
+                    </div>
 
-                    </ul>
-                    <div className="navMobileLine"></div> <br />
-                    <div>
+                    <div className="mobileLinks">
+                        {navLinks.map((link) => (
+                            <a
+                                key={link.href}
+                                className="mobileLink"
+                                href={link.href}
+                                onClick={() => setShowMenu(false)}
+                            >
+                                {link.label}
+                            </a>
+                        ))}
+                    </div>
+
+                    <div className="mobileActions">
                         <DownloadCv />
-                    </div>
-                    <br />
 
+                        <button
+                            className="themeButton full"
+                            type="button"
+                            onClick={toggleTheme}
+                        >
+                            Switch to {theme === 'dark' ? 'Light' : 'Dark'} Mode
+                        </button>
+                    </div>
                 </div>
-            </nav>
-        </div>
+            )}
+        </header>
     )
 }
 

@@ -1,28 +1,33 @@
 [
+     {
+        "name": " Insurance Claims Officer | IT & Process Automation ",
+        "company": "ACCUMED , On-site at Dubai Corporation for Ambulance Services (DCAS), Dubai.",
+        "duration": "FEBRUARY 2026 – PRESENT"
+    },
     {
         "name": "Frontend developer & IT support & sales ",
         "company": " Almuhandes Workshop Equipment  , sharjah   ",
-        "duration": "MARCH 2025 – PRESENT   "
+        "duration": "MARCH 2025 – FEBRUARY 2026"
     },
     {
-        "name": "Full Stack Developer (NextJs) ",
-        "company": "training – Vica Web Solutions , Syria   ",
-        "duration": "SEPTEMBER 2024 – JANUARY 2025 – (5 MONTHS)  "
+        "name": "Full Stack Developer (NextJs)",
+        "company": "Vica Web Solutions , Syria | (Trainee)   ",
+        "duration": "SEPTEMBER 2024 – JANUARY 2025  "
     },
     {
         "name": "Back-end Developer (Laravel)",
-        "company": " training – Vica Web Solutions , Syria ",
-        "duration": "MARCH 2024 – JULY 2024 – (5 MONTHS) "
+        "company": " Vica Web Solutions , Syria | (Trainee) ",
+        "duration": "MARCH 2024 – JULY 2024"
     },
     {
         "name": "Front-end Developer (reactJs) ",
-        "company": " training – Vica Web Solutions , Syria ",
-        "duration": "FEBRUARY 2024 – JULY 2024 – (6 MONTHS)  "
+        "company": "Vica Web Solutions , Syria | (Trainee)",
+        "duration": "FEBRUARY 2024 – JULY 2024 "
     },
     {
         "name": "Technical Support And Social Media ",
-        "company": "Lapronteh Leather Products - Damascus",
-        "duration": "MARCH 2021 - JANUARY 2023 – (1 YEARS AND 11 MONTHS) "
+        "company": "Lapronteh Leather Products-Damascus",
+        "duration": "MARCH 2021 - JANUARY 2023"
     },
     {
         "name": "Graphic Designer",
@@ -31,7 +36,8 @@
     },
     {
         "name": "Graphic Designer",
-        "company": "PrimoCore - Damascus",
+        "company": "PrimoCore – Damascus",
         "duration": "JANUARY 2020 - APRIL 2020 – (4 MONTHS) "
     }
 ]
+

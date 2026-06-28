@@ -1,144 +1,237 @@
-import React from 'react'
-import './Home.css'
-import Footer from '../Footer/Footer'
-import NavBar from '../NavBar/NavBar'
-import Education from './../../data/Education.json'
-import Certificate from './../../data/Certificate.json'
-import Experience from './../../data/Experience.json'
-import Skill from './../../data/Skill.json'
-import softskils from './../../data/softskils.json'
-import Project from './../../data/Project.json'
-import Contact from './../../data/Contact.json'
-const Home = () => {
-    return (
-        <div className='home' >
-            <NavBar />
+import React, { useContext } from "react";
+import "./Home.css";
+import Footer from "../Footer/Footer";
+import NavBar from "../NavBar/NavBar";
+import Education from "./../../data/Education.json";
+import Certificate from "./../../data/Certificate.json";
+import Experience from "./../../data/Experience.json";
+import Skill from "./../../data/Skill.json";
+import softskils from "./../../data/softskils.json";
+import Project from "./../../data/Project.json";
+import Contact from "./../../data/Contact.json";
+import { ThemeContext } from "../../context/ThemeContext";
 
-            <div className="Hero">
-                <div className='HeroTitle' >
-                    <h1>Hello , <br /> <span>I'm Yazan</span></h1> <br />
-                    <h1>Full-Stack Developer | React.js & Laravel & Specialist | Crafting Scalable Solutions</h1>
-                    {/* <h4>Dubai residence visa</h4> */}
-                </div>
-                <img className='Pic' src="/images/yazan.png" alt="" />
+const Home = () => {
+  const [theme] = useContext(ThemeContext);
+
+  return (
+    <div className={`home ${theme === "dark" ? "dark" : "light"}`}>
+      <NavBar />
+
+      <main>
+        <section className="Hero">
+          <div className="HeroTitle">
+            <span className="heroBadge">Available for full-stack work</span>
+
+            <h1>
+              Hi, I'm <span>Yazan Khairi</span>
+            </h1>
+
+            <h2>
+              Full-Stack Developer building clean, scalable web applications
+              with React and Laravel.
+            </h2>
+
+            <p>
+              I create modern front-end interfaces, reliable back-end systems,
+              dashboards, API integrations, and database-driven applications
+              with a focus on performance, maintainability, and real business
+              value.
+            </p>
+
+            <div className="heroActions">
+              <a className="primaryAction" href="#Projects">
+                View Projects
+              </a>
+              <a className="secondaryAction" href="#Contact">
+                Contact Me
+              </a>
             </div>
 
-            <section className='About' id='About' >
-                <p className='AboutTitle' >
-                    I am a dedicated full-stack developer with a degree in Informatics Engineering from
-                    Ittihad Private University. I have a strong foundation in both front-end and back
-                    end development, with proficiency in HTML, CSS, JavaScript, and libraries like
-                    React and Next.js. I am well-versed in tools such as Bootstrap and Git/GitHub.
-                    On the backend, I specialize in PHP and MySQL, with experience developing
-                    scalable web applications using Laravel. I also have expertise in modern
-                    technologies like MongoDB, PostgreSQL, and Prisma for efficient database
-                    management. My skills include API integrations, server-side logic, and building
-                    high-performance applications. Additionally, I have a strong background in graphic
-                    design, proficient in Photoshop and Illustrator.
-                </p>
-            </section>
-            <section className='Education' id='Education' >
-                <h2 className='titleEducation' >Education</h2>
-                {Education.map((element, index) => {
-                    return (
-                        <div key={index} >
-                            <b>{element.duration}</b>
-                            <h5>{element.name} / {element.university}</h5>
+            <div className="heroStats">
+              <div>
+                <strong>10+</strong>
+                <small>Projects</small>
+              </div>
+              <div>
+                <strong>React</strong>
+                <small>Frontend</small>
+              </div>
+              <div>
+                <strong>Laravel</strong>
+                <small>Backend</small>
+              </div>
+            </div>
+          </div>
 
-                        </div>
-                    )
-                })}
-            </section>
-            <section className='Certificate' id='Certificate' >
-                <h2 className='titleCertificate' > Certificate</h2>
-                {Certificate.map((element, index) => {
-                    return (
-                        <div key={index}>
-                            <p  >
-                                <b>{element.name}  </b>
-                                <span>  /  {element.institute}</span>
-                                <i> - {element.duration}</i>
-                            </p>
-                            <hr />
-                        </div>
-                    )
-                })}
-            </section>
-            <section className='Experience' id='Experiences' >
-                <h2 className='titleExperiences' >Experiences</h2>
-                {Experience.map((element, index) => {
-                    return (
-                        <div key={index}>
-                            <p  >
-                                <b>{element.name}  </b>
-                                <span>  /  {element.company}</span>
-                                <i> - {element.duration}</i>
-                            </p>
-                            <hr />
-                        </div>
-                    )
-                })}
-            </section>
-            <section className='Skill' id='Skill'  >
-                <h2 className='titleSkil' >Technical Skills</h2>
-                <div className='SkillContainer' >
-                    {Skill.map((element, index) => {
-                        return (
-                            <b className='SkillName' key={index} >{element.name}</b>
-                        )
-                    })}
+          <div className="heroVisual">
+            <img className="Pic" src="/public/images/yazan.jpg" alt="Yazan Khairi" />
+
+            <div className="codeCard">
+              <div className="codeDots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <p>
+                <span>const</span> developer = &#123;
+              </p>
+              <p>&nbsp;&nbsp;name: "Yazan",</p>
+              <p>&nbsp;&nbsp;stack: ["React", "Laravel , NextJs"],</p>
+              <p>&nbsp;&nbsp;focus: "Scalable Apps"</p>
+              <p>&#125;</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="About sectionBlock" id="About">
+          <div className="sectionHeader">
+            <span>About</span>
+            <h2>Developer with a product mindset</h2>
+          </div>
+
+          <p className="AboutTitle">
+            I am a Full Stack Developer with a Bachelor's degree in Informatics
+            Engineering. I have experience in front-end development using React,
+            Next.js, and TypeScript, as well as back-end development with PHP
+            and Laravel. I am proficient in database management with MySQL,
+            MongoDB, and PostgreSQL. I have experience with REST API
+            integration, server-side development, and application optimization.
+            I also have a solid background in graphic design, with proficiency
+            in Adobe Photoshop and Illustrator.
+          </p>
+        </section>
+
+        <section className="Education sectionBlock" id="Education">
+          <div className="sectionHeader">
+            <span>Education</span>
+            <h2>Academic background</h2>
+          </div>
+
+          <div className="timelineList">
+            {Education.map((element, index) => (
+              <article className="timelineItem" key={index}>
+                <small>{element.duration}</small>
+                <h3>{element.name}</h3>
+                <p>{element.university}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="Certificate sectionBlock" id="Certificate">
+          <div className="sectionHeader">
+            <span>Certificates</span>
+            <h2>Training and certifications</h2>
+          </div>
+
+          <div className="timelineList">
+            {Certificate.map((element, index) => (
+              <article className="timelineItem" key={index}>
+                <small>{element.duration}</small>
+                <h3>{element.name}</h3>
+                <p>{element.institute}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="Experience sectionBlock" id="Experiences">
+          <div className="sectionHeader">
+            <span>Experience</span>
+            <h2>Work experience</h2>
+          </div>
+
+          <div className="timelineList">
+            {Experience.map((element, index) => (
+              <article className="timelineItem" key={index}>
+                <small>{element.duration}</small>
+                <h3>{element.name}</h3>
+                <p>{element.company}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="Skill sectionBlock" id="Skill">
+          <div className="sectionHeader">
+            <span>Skills</span>
+            <h2>Technical stack</h2>
+          </div>
+
+          <div className="SkillContainer">
+            {Skill.map((element, index) => (
+              <b className="SkillName" key={index}>
+                {element.name}
+              </b>
+            ))}
+          </div>
+        </section>
+
+        <section className="Skill sectionBlock">
+          <div className="sectionHeader">
+            <span>Soft Skills</span>
+            <h2>How I work</h2>
+          </div>
+
+          <div className="SkillContainer">
+            {softskils.map((element, index) => (
+              <b className="SkillName soft" key={index}>
+                {element.name}
+              </b>
+            ))}
+          </div>
+        </section>
+
+        <section className="ProjectsSection sectionBlock" id="Projects">
+          <div className="sectionHeader">
+            <span>Projects</span>
+            <h2>Selected work</h2>
+          </div>
+
+          <div className="Project">
+            {Project.map((element, index) => (
+              <article className="ProjectContainer" key={index}>
+                <img src={`/images/${element.image}`} alt={element.name} />
+
+                <div className="projectBody">
+                  <h3>{element.name}</h3>
+                  <p>{element.about}</p>
+
+                  <a href={element.url} target="_blank" rel="noreferrer">
+                    Visit Project
+                  </a>
                 </div>
-            </section>
-            <section className='Skill' id='Skill'  >
-                <h2 className='titleSkil' > Soft Skills</h2>
-                <div className='SkillContainer' >
-                    {softskils.map((element, index) => {
-                        return (
-                            <b className='SkillName' key={index} >{element.name}</b>
-                        )
-                    })}
-                </div>
-            </section>
-            <h2 className='titleProject' >Projects</h2>
-            <section className='Project' id='Projects' >
+              </article>
+            ))}
+          </div>
+        </section>
 
-                {Project.map((element, index) => {
-                    return (
-                        <div key={index} >
-                            <div className="card ProjectContainer ">
-                                <img src={`/images/${element.image}`} className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <h5 className="card-title">{element.name}</h5>
-                                    <p className="card-text">{element.about}</p>
-                                    <a className="btn btn-primary" href={`${element.url}`} target="_blank">Visit</a>
-                                </div>
-                            </div>
-                        </div>
-                    )
-                })}
-            </section>
-            <section className='Social' id='Contact' >
-                <h2 className='titleSocial' >Contact</h2>
-                <marquee direction="left" scrollamount="10">
-                    <div className="contactContainer">
+        <section className="Social sectionBlock" id="Contact">
+          <div className="sectionHeader">
+            <span>Contact</span>
+            <h2>Let's build something useful</h2>
+          </div>
 
-                        {Contact.map((element, index) => {
-                            return (
-                                <div key={index} >
-                                    <a target="_blank" href={element.url}>
-                                        <img src={`/images/${element.image}`} alt="" />
-                                    </a>
-                                </div>
-                            )
-                        })}
+          <div className="contactContainer">
+            {Contact.map((element, index) => (
+              <a
+                className="contactLink"
+                key={index}
+                target="_blank"
+                rel="noreferrer"
+                href={element.url}
+              >
+                <img src={`/images/${element.image}`} alt="Contact link" />
+              </a>
+            ))}
+          </div>
+        </section>
+      </main>
 
-                    </div>
-                </marquee>
-            </section>
-            <Footer />
+      <Footer />
+    </div>
+  );
+};
 
-        </div>
-    )
-}
-
-export default Home
+export default Home;

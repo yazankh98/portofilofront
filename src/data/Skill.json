@@ -1,11 +1,5 @@
 [
     {
-        "name": "HTML"
-    },
-    {
-        "name": "CSS"
-    },
-    {
         "name": "JavaScript"
     },
     {
@@ -42,13 +36,7 @@
         "name": "Git & Githup"
     },
     {
-        "name": "Relational databases"
-    },
-    {
         "name": " Web Development"
-    },
-    {
-        "name": "Unit Testing"
     },
     {
         "name": "Object-Oriented Programming"
@@ -64,8 +52,5 @@
     },
     {
         "name": "Illustrator"
-    },
-    {
-        "name": "Ms office"
     }
 ]

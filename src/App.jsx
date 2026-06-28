@@ -1,36 +1,28 @@
-
-import React, { useState, useEffect } from "react";
-import 'bootstrap/dist/css/bootstrap.css';
-import Home from "./components/Home/Home";
+import React, { useState, useEffect } from "react"
+import 'bootstrap/dist/css/bootstrap.css'
+import Home from "./components/Home/Home"
 import './App.css'
-import { ThemeContext } from "./context/ThemeContext";
-
-
+import { ThemeContext } from "./context/ThemeContext"
 
 function getInitialTheme() {
-
-  const theme = localStorage.getItem('theme')
-  return theme ? JSON.parse(theme) : 'light'
+    const savedTheme = localStorage.getItem('theme')
+    return savedTheme ? JSON.parse(savedTheme) : 'light'
 }
+
 function App() {
-  const [theme, setTheme] = useState(getInitialTheme)
+    const [theme, setTheme] = useState(getInitialTheme)
 
+    useEffect(() => {
+        localStorage.setItem('theme', JSON.stringify(theme))
+    }, [theme])
 
-  useEffect(() => {
-    localStorage.setItem('theme', JSON.stringify(theme))
-  }, [theme])
-
-  return (
-    <>
-
-      <ThemeContext.Provider value={[theme, setTheme]} >
-
-        <div className={`${theme} theme`}>
-          <Home />
-        </div>
-      </ThemeContext.Provider>
-    </>
-  )
+    return (
+        <ThemeContext.Provider value={[theme, setTheme]}>
+            <div className={`appShell ${theme}`}>
+                <Home />
+            </div>
+        </ThemeContext.Provider>
+    )
 }
 
 export default App
